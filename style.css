@@ -148,9 +148,9 @@ div.gallery:hover {
 }
 
 div.gallery img {
-padding: 15px;
-width: 100px;
-height: 100px;
+  align-items: center;
+  width: 185px;
+  height: 100px;
 }
 
 div.desc {
