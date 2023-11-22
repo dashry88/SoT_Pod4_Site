@@ -154,7 +154,7 @@ height: 100px;
 }
 
 div.desc {
-  padding: 15px;
+  padding: auto;
   text-align: center;
 }
 
