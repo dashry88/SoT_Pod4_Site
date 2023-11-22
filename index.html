@@ -37,6 +37,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#product">Products</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#book">Book Now</a></li>
       </ul>                 
     </header>
    
@@ -74,6 +75,60 @@
             </section>
             </p>
           </div>
+<!-- added new-->
+          <div id="book" class="content-region hide">
+            <p>
+              <h2>Register for Car Rental</h2>
+
+              <form id="carRentalForm" action="#" method="post" onsubmit="showAlert(event)">
+                <!-- Full Name -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <br>
+            
+                <!-- Driving License Number -->
+                <label for="licenseNumber">Driving License No.:</label>
+                <input type="text" id="licenseNumber" name="licenseNumber" required>
+                <br>
+            
+                <!-- Phone Number -->
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <br>
+            
+                <!-- Pickup Date -->
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+                <br>
+            
+                <!-- Rent per Hour/Day -->
+                <label for="rentType">Rent per Hour/Day:</label>
+                <select id="rentType" name="rentType" required>
+                  <option value="hour">Per Hour</option>
+                  <option value="day">Per Day</option>
+                </select>
+                <br>
+            
+                <!-- Submit Button -->
+                <input type="submit" value="Book Now">
+              </form>
+              <script>
+                function showAlert(event) {
+                  event.preventDefault(); // Prevents the form from submitting in the traditional way
+            
+                  // Show a custom alert message
+                  alert("We got your form. We will contact you shortly.");
+            
+                  // Optionally, you can submit the form data to the server here if needed
+                  // var formData = new FormData(event.target);
+                  // ... (send data to the server using AJAX or other methods)
+                }
+              </script>
+              
+            </section>
+            </p>
+          </div>
+<!--added new-->
 
           <div id="product" class="content-region hide">
               <section id="product">
@@ -81,12 +136,12 @@
                 <!-- new addition -->
 
                 <div class="responsive">
-  <div class="gallery">
-    <!--<a target="_blank" href="img/Alphard.jpeg">-->
-      <img src="img/Alphard.jpeg" alt="Alphard">
-    <!--</a>-->
-    <div class="desc">MPVs</div>
-  </div>
+            <div class="gallery">
+               <!--<a target="_blank" href="img/Alphard.jpeg">-->
+                   <img src="img/Alphard.jpeg" alt="Alphard">
+               <!--</a>-->
+                   <div class="desc">MPVs</div>
+               </div>
 </div>
 
 <div class="responsive">
@@ -106,8 +161,9 @@
     <div class="desc">Sedans</div>
   </div>
 </div>
-
 <div class="clearfix"></div>
+
+
 <!-- End of new addition -->
                 
 <!--
